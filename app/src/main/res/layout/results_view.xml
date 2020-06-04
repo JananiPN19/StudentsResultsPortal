@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/Background"
+                                                   tools:context=".ViewResults">
+    <TextView
+            android:text="@string/final_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/result_view_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.1" android:textColor="#E91E63" android:textSize="18sp"
+            android:textStyle="bold" android:fontFamily="@font/capriola" android:textAllCaps="true"/>
+    <TableRow
+            android:layout_width="357dp"
+            android:layout_height="62dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.492" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/result_view_text" app:layout_constraintVertical_bias="0.087"
+            android:id="@+id/tableRow">
+        <TextView
+                android:text="@string/register_number_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reg_num"
+                android:layout_gravity="center" android:textAllCaps="true" android:textColor="#00BCD4"
+                android:textSize="17sp" android:fontFamily="@font/capriola"/>
+        <TextView
+                android:layout_width="173dp"
+                android:layout_height="wrap_content" android:id="@+id/reg_num_res"
+                android:layout_gravity="center" android:textColor="#FFFFFF" android:textAlignment="viewEnd"
+                android:textSize="17sp" android:textStyle="bold"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="357dp"
+            android:layout_height="66dp"
+            android:id="@+id/tableRow1" app:layout_constraintTop_toBottomOf="@+id/tableRow"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.492">
+        <TextView
+                android:text="@string/dbms_mark_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView3"
+                android:layout_gravity="center" android:fontFamily="@font/capriola" android:textColor="#00BCD4"
+                android:textSize="17sp"/>
+        <TextView
+                android:text=""
+                android:layout_width="294dp"
+                android:layout_height="wrap_content" android:id="@+id/dbms_res"
+                android:layout_gravity="center" android:fontFamily="sans-serif" android:textColor="#FFFFFF"
+                android:textSize="17sp" android:textStyle="bold" android:textAlignment="viewEnd"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="357dp"
+            android:layout_height="66dp"
+            android:id="@+id/tableRow2" app:layout_constraintTop_toBottomOf="@+id/tableRow1"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.492">
+        <TextView
+                android:text="@string/python_mark_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView5" android:fontFamily="@font/capriola"
+                android:textColor="#00BCD4" android:textAllCaps="true" android:textSize="17sp"
+                android:layout_gravity="center"/>
+        <TextView
+                android:text=""
+                android:layout_width="272dp"
+                android:layout_height="wrap_content" android:id="@+id/python_res"
+                android:layout_gravity="center" android:textColor="#FFFFFF" android:textSize="17sp"
+                android:fontFamily="sans-serif" android:textAlignment="viewEnd" android:textStyle="bold"/>
+    </TableRow>
+    <TableRow
+            android:layout_width="357dp"
+            android:layout_height="66dp"
+            android:id="@+id/tableRow3" app:layout_constraintTop_toBottomOf="@+id/tableRow2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.492">
+        <TextView
+                android:text="@string/ds_mark_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView7" android:textColor="#00BCD4"
+                android:textAllCaps="true" android:textSize="17sp"
+                android:layout_gravity="center" android:fontFamily="@font/capriola"/>
+        <TextView
+                android:layout_width="179dp"
+                android:layout_height="wrap_content" android:id="@+id/ds_res"
+                android:layout_gravity="center" android:fontFamily="sans-serif" android:textColor="#FFFFFF"
+                android:textSize="17sp" android:textAlignment="viewEnd" android:textStyle="bold"/>
+    </TableRow>
+    <Button
+            android:text="@string/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/back_button1"
+            android:fontFamily="@font/capriola"
+            android:background="@color/colorAccent" android:textColor="#E91E63"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow3" android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.053"
+            android:textSize="16sp" android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

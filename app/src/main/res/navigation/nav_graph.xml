@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/index">
+    <fragment android:id="@+id/index" android:name="com.JP19.studentsresultsportal.Index" android:label="Index">
+        <action android:id="@+id/action_index_to_loginAsStudent" app:destination="@id/loginAsStudent"/>
+        <action android:id="@+id/action_index_to_loginAsFaculty" app:destination="@id/loginAsFaculty"/>
+    </fragment>
+    <fragment android:id="@+id/loginAsStudent" android:name="com.JP19.studentsresultsportal.LoginAsStudent"
+              android:label="LoginAsStudent">
+        <action android:id="@+id/action_loginAsStudent_to_welcome" app:destination="@id/welcome"/>
+    </fragment>
+    <fragment android:id="@+id/loginAsFaculty" android:name="com.JP19.studentsresultsportal.LoginAsFaculty"
+              android:label="LoginAsFaculty">
+        <action android:id="@+id/action_loginAsFaculty_to_marksUpdate" app:destination="@id/marksUpdate"/>
+    </fragment>
+    <fragment android:id="@+id/marksUpdate" android:name="com.JP19.studentsresultsportal.MarksUpdate"
+              android:label="update_marks" tools:layout="@layout/update_marks">
+        <action android:id="@+id/action_marksUpdate_to_index" app:destination="@id/index"/>
+    </fragment>
+    <fragment android:id="@+id/welcome" android:name="com.JP19.studentsresultsportal.Welcome" android:label="Welcome">
+        <action android:id="@+id/action_welcome_to_viewResults" app:destination="@id/viewResults"/>
+    </fragment>
+    <fragment android:id="@+id/viewResults" android:name="com.JP19.studentsresultsportal.ViewResults"
+              android:label="results_view" tools:layout="@layout/results_view">
+        <action android:id="@+id/action_viewResults_to_welcome" app:destination="@id/welcome"/>
+        <argument android:name="myArg" app:argType="integer"/>
+    </fragment>
+</navigation>

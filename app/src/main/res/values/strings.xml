@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">StudentsResultsPortal</string>
+    <string name="password">Password</string>
+    <string name="login" tools:ignore="DuplicateDefinition">Login</string>
+    <string name="submit">Submit</string>
+    <string name="user_id">User ID</string>
+    <string name="register_number">Register Number</string>
+    <string name="pwd">password</string>
+    <string name="welcome">Welcome to Results Portal.</string>
+    <string name="check_results_text">Enter your Register number and check your results.</string>
+    <string name="enter_register_number">Enter Register Number</string>
+    <string name="results_portal">Results Portal</string>
+    <string name="login_as_student">Login as Student</string>
+    <string name="login_as_faculty">Login as Faculty</string>
+    <string name="insert_update_text">Insert/Update Students\' marks</string>
+    <string name="register_number_student">Register Number of Student</string>
+    <string name="dbms">DBMS</string>
+    <string name="dbms_mark">DBMS mark</string>
+    <string name="python">Python</string>
+    <string name="python_mark">Python mark</string>
+    <string name="data_structures">Data Structures</string>
+    <string name="ds_mark">DS mark</string>
+    <string name="insert_button">Insert</string>
+    <string name="update_button">Update</string>
+    <string name="action_settings">Settings</string>
+    <string name="final_results">Final Results</string>
+    <string name="register_number_res">Register Number : </string>
+    <string name="dbms_mark_res">DBMS :</string>
+    <string name="python_mark_res">python :</string>
+    <string name="ds_mark_res">data structures :</string>
+    <string name="back">Back</string>
+    <string name="email_id">Email-id</string>
+    <string name="students_text">For Students</string>
+    <string name="faculties_text">For Faculties</string>
+</resources>

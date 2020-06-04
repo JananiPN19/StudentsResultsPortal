@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/Background">
+
+    <TextView
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/login2"
+            android:textAllCaps="true" android:textColor="#E91E63"
+            android:textStyle="bold" android:textSize="50sp" android:fontFamily="@font/capriola"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.223"/>
+    <TextView
+            android:text="@string/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/user_id2"
+            android:fontFamily="@font/capriola" android:textColor="#00BCD4"
+            android:textSize="20sp" android:textStyle="bold" app:layout_constraintTop_toBottomOf="@+id/login2"
+            android:layout_marginTop="76dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintBottom_toTopOf="@+id/reg_no2" app:layout_constraintVertical_bias="1.0"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/reg_no2"
+            android:backgroundTint="#FFFFFF"
+            android:hint="@string/email_id" android:fontFamily="sans-serif" android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login2" android:layout_marginTop="120dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.322"
+            app:layout_constraintBottom_toTopOf="@+id/passwd2" app:layout_constraintVertical_bias="0.129"
+            tools:targetApi="lollipop" android:importantForAutofill="no"/>
+    <TextView
+            android:text="@string/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/pwd_text2"
+            android:fontFamily="@font/capriola" android:textColor="#00BCD4"
+            android:textSize="20sp" android:textStyle="bold" app:layout_constraintTop_toBottomOf="@+id/reg_no2"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintBottom_toTopOf="@+id/passwd2"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwd2"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@+id/login2" android:layout_marginTop="228dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.322" android:hint="@string/pwd" android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF" android:fontFamily="sans-serif"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop" android:importantForAutofill="no"/>
+    <Button
+            android:text="@string/submit"
+            android:layout_width="126dp"
+            android:layout_height="51dp" android:id="@+id/submit2"
+            app:layout_constraintTop_toBottomOf="@+id/passwd2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.443"
+            android:background="@color/colorAccent" android:textColor="#E91E63" android:fontFamily="@font/capriola"
+            android:textSize="22sp"/>
+    <TextView
+            android:text="@string/faculties_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:fontFamily="@font/capriola" android:textSize="17sp"
+            android:textColor="#E91E63" android:textAllCaps="true" android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/login2" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.05" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
